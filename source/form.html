@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Energy</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="" width="" height="" alt="">
+      </a>
+      <a class="header__logo-letter logo-letter" href="">
+        <img src="" width="" height="" alt="Логотип Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <svg>
+          </svg>
+        </button>
+        <a class="main-nav__link site-link" href="#">Главная</a>
+        <a class="main-nav__link site-link" href="#">Каталог продукции</a>
+        <a class="main-nav__link main-nav__link--current site-link" href="#">Подбор программы</a>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="form-container">
+        <h1 class="form-container__heading heading">Подбор программы</h1>
+        <p class="form-container__subheading">Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset" aria-label="Данные о коте">
+            <label class="form__label" for="form__name">Имя</label>
+            <input class="form__input" id="form__name" name="name" type="text" placeholder="Барсик" required>
+            <label class="form__label" for="form__weight">Вес</label>
+            <input class="form__input" id="form__weight" name="weight" type="text" placeholder="7" required>
+            <label class="form__label" for="form__age">Возраст</label>
+            <input class="form__input" id="form__age" name="age" type="text" placeholder="7">
+          </fieldset>
+          <fieldset class="form__fieldset" aria-label="Выбор программы">
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="radio" name="program" value="weight-loss" checked>
+              <span class="form__control-mark form__control-mark--radio"></span>
+              <span class="form__label">Похудение</span>
+            </label>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="radio" name="program" value="weight-gain">
+              <span class="form__control-mark form__control-mark--radio"></span>
+              <span class="form__label">Набор массы</span>
+            </label>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="radio" name="program" value="need-help">
+              <span class="form__control-mark form__control-mark--radio"></span>
+              <span class="form__label">не знаю (нужен ваш совет)</span>
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__heading">Контактные данные (владельца кота)</legend>
+            <label class="form__label" for="form__email">E-mail</label>
+            <input class="form__input form__input--email" id="form__email" name="e-mail" type="email" required>
+            <label class="form__label" for="form__tel">Телефон</label>
+            <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel" required>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__heading">Комментарий</legend>
+            <textarea class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__heading">Дополнительно</legend>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="form__control-mark"></span>
+              <span class="form__label">Сахарозаменитель</span>
+            </label>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="checkbox" name="drinking-water">
+              <span class="form__control-mark"></span>
+              <span class="form__label">Питьевая вода</span>
+            </label>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="checkbox" name="milk">
+              <span class="form__control-mark"></span>
+              <span class="form__label">Молоко</span>
+            </label>
+            <label class="form__control">
+              <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="form__control-mark"></span>
+              <span class="form__label">Витамины</span>
+            </label>
+            <button class="form__button button" type="submit">Отправить заявку</button>
+          </fieldset>
+          <p class="form__footnote">* - Обязательные поля</p>
+        </form>
+      </section>
+      <section class="invite-dealers">
+        <h3 class="invite-dealers__heading">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="invite-dealers__map" src="" width="" height="" alt="Карта местоположения офиса">
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo-letter logo-letter">
+        <svg></svg>
+      </a>
+      <div class="footer__social-wrapper">
+        <a class="footer__social-link footer__social-link--vk" href="#" aria-label="Вконтакте.">
+          <svg></svg>
+        </a>
+        <a class="footer__social-link footer__social-link--youtube" href="#" aria-label="Ютуб.">
+          <svg></svg>
+        </a>
+        <a class="footer__social-link footer__social-link--telegram" href="#" aria-label="Телеграм.">
+          <svg></svg>
+        </a>
+      </div>
+      <a class="footer__Academy-logo-letter" href="#">
+        <svg></svg>
+      </a>
+      <a class="footer__Academy-logo" href="#">
+        <svg></svg>
+      </a>
+    </footer>
+  </body>
+</html>
