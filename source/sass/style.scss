@@ -1,1 +1,8 @@
-// Начните писать стили здесь
+// Базовые стили
+@use"../sass/base/fonts.scss";
+@use "../sass/base/base.scss";
+
+@use "../sass/blocks/header.scss";
+@use "../sass/blocks/logo.scss";
+@use "../sass/blocks/main-nav.scss";
+@use "../sass/blocks/nav-closed.scss";
