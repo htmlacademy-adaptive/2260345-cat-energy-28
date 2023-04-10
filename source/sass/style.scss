@@ -1,15 +1,15 @@
 // Базовые стили
-@use "../sass/base/fonts.scss";
-@use "../sass/base/base.scss";
+@use "base/fonts.scss";
+@use "base/base.scss";
 
 // Миксины и переменные
-@use "../sass/mixins.scss";
-@use "../sass/variables.scss";
+// @use "mixins.scss";
+// @use "variables.scss";
 
 // Блоки
-@use "../sass/blocks/header.scss";
-@use "../sass/blocks/logo.scss";
-@use "../sass/blocks/main-nav.scss";
-@use "../sass/blocks/nav-closed.scss";
-@use "../sass/blocks/main-container.scss";
-@use "../sass/blocks/footer.scss";
+@use "blocks/header.scss";
+@use "blocks/logo.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/nav-closed.scss";
+@use "blocks/main-container.scss";
+@use "blocks/footer.scss";
