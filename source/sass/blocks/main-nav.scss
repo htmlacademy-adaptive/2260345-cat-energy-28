@@ -4,5 +4,7 @@
 }
 
 .main-nav__link {
-  text-decoration: none;
+  // @include link-reset;
+  font-size: 20px;
+  line-height: 20px;
 }
