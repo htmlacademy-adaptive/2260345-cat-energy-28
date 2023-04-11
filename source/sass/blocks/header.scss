@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  flex-direction: column;
-  font-family: "Oswald", "Arial", sans-serif;
+  // flex-direction: column;
+  font-family: inherit;
   background-color: #ffffff;
   padding: 10px 20px 17px;
 }
@@ -13,6 +13,3 @@
   gap: 65px;
 }
 
-.header__toggle {
-  cursor: pointer;
-}

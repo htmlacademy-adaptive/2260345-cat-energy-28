@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  gap: 26px;
+}
+
+.social__link {
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}

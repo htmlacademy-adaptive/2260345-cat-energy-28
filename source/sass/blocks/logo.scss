@@ -3,3 +3,17 @@
   align-items: center;
   text-decoration: none;
 }
+
+.logo--letter {
+  color: #111111;
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+    outline: none;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}

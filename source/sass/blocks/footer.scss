@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.footer__academy-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__academy-logo {
+  color: #666666;
+  margin-left: 141px;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.footer__academy-logo-letter {
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    color: #444444;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
