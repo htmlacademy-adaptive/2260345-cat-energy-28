@@ -13,12 +13,14 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   min-height: 100%;
   width: 320px;
   margin: 0;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -27,9 +29,9 @@ a {
   text-decoration: none;
 }
 
-// :root {
-//   --main-font: "Oswald";
-// }
+:root {
+  --secondary-font: "Lato", "Arial", sans-serif;
+}
 
 // В блоках
 // var(--main-font)

@@ -1,4 +1,12 @@
-@mixin link-reset {
-  display: block;
-  text-decoration: none;
+@mixin site-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+@mixin site-content {
+  margin: 0;
+  font-family: var(--secondary-font);
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
 }
