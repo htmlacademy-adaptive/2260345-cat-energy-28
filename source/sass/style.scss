@@ -2,16 +2,13 @@
 @use "base/fonts.scss";
 @use "base/base.scss";
 
-// Миксины и переменные
-// @use "mixins.scss";
-// @use "variables.scss";
-
 // Блоки
 @use "blocks/header.scss";
 @use "blocks/logo.scss";
 @use "blocks/main-nav.scss";
 @use "blocks/nav-closed.scss";
 @use "blocks/main-container.scss";
+@use "blocks/example.scss";
 @use "blocks/invite-dealers.scss";
 @use "blocks/footer.scss";
 @use "blocks/social.scss";

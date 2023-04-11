@@ -1,0 +1,46 @@
+@use "../mixins.scss" as *;
+
+.example {
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  @include site-title;
+  font-size: 36px;
+  font-weight: 40px;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  @include site-content;
+  margin-bottom: 20px;
+}
+
+.example__list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0;
+}
+
+.example__weight,
+.example__time {
+  @include site-content;
+  font-size: 12px;
+  font-weight: 12px;
+}
+
+.example__description {
+  @include site-title;
+  font-size: 24px;
+  font-weight: 24px;
+}
+
+.example__slider {
+  display: flex;
+}
