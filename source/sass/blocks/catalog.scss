@@ -10,9 +10,7 @@
 }
 
 .catalog__title {
-  @include site-title;
+  @include site-title(36px, 36px);
   margin-top: 27px;
   margin-bottom: 41px;
-  font-size: 36px;
-  line-height: 36px;
 }

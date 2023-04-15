@@ -29,6 +29,7 @@
 
     .product-card__title {
       margin-bottom: 8px;
+      padding: 0;
     }
 
     .product-card__subtitle {
@@ -43,6 +44,10 @@
     flex-direction: column;
     align-items: stretch;
     row-gap: 14px;
+
+    .product-card__title {
+      line-height: 16px;
+    }
   }
 }
 
@@ -53,12 +58,10 @@
 }
 
 .product-card__title {
-  @include site-title;
-  font-size: 16px;
-  line-height: 20px;
+  @include site-title(16px, 20px);
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-right: 64px;
+  padding-right: 64px;
 }
 
 .product-card__description {

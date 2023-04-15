@@ -6,9 +6,7 @@
 }
 
 .example__title {
-  @include site-title;
-  font-size: 36px;
-  font-weight: 40px;
+  @include site-title(36px, 40px);
   margin-bottom: 40px;
 }
 
@@ -35,13 +33,11 @@
 .example__time {
   @include site-content;
   font-size: 12px;
-  font-weight: 12px;
+  line-height: 12px;
 }
 
 .example__description {
-  @include site-title;
-  font-size: 24px;
-  font-weight: 24px;
+  @include site-title(24px, 24px);
 }
 
 .example__slider {

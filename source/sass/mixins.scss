@@ -1,4 +1,6 @@
-@mixin site-title {
+@mixin site-title($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
   margin: 0;
   font-weight: 400;
 }

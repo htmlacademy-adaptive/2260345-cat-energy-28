@@ -12,13 +12,12 @@
 
 .invite-dealers__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   padding: 26px 20px;
 }
 
 .invite-dealers__title {
-  @include site-title;
+  @include site-title(16px, 20px);
 }
 
 .invite-dealers__address {

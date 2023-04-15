@@ -8,16 +8,12 @@
 }
 
 .form-container__title {
-  @include site-title;
-  font-size: 36px;
-  line-height: 36px;
+  @include site-title(36px, 36px);
   margin-bottom: 37px;
 }
 
 .form-container__subtitle {
-  @include site-title;
-  font-size: 14px;
-  line-height: 18px;
+  @include site-title(14px, 18px);
   margin-bottom: 39px;
   margin-right: 64px;
 }

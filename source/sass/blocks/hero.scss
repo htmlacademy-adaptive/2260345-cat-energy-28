@@ -27,11 +27,9 @@
 }
 
 .hero__title {
-  @include site-title;
+  @include site-title(36px, 36px);
   margin-bottom: 25px;
   text-align: center;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .hero__subtitle {
