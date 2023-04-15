@@ -1,0 +1,75 @@
+@use "../mixins.scss" as*;
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.form__cat-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 46px;
+  margin-bottom: 45px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__input-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.form__label {
+  @include site-title;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__input {
+  font-family: inherit;
+  color: #444444;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 15px;
+}
+
+.form__title {
+  @include site-title;
+  padding-right: 93px;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.form__comment {
+  @include site-title;
+  padding: 10px 12px 125px 15px;
+  font-family: inherit;
+  border: none;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__footnote {
+  @include site-content;
+  line-height: 16px;
+  color: #000000;
+  align-self: center;
+}

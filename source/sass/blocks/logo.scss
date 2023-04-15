@@ -1,19 +1,23 @@
 .logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-decoration: none;
-}
-
-.logo--letter {
   color: #111111;
 
-  &:hover,
-  &:focus {
-    color: #3e3e3e;
-    outline: none;
-  }
+  &--letter {
+    &:hover,
+    &:focus {
+      color: #3e3e3e;
+      outline: none;
+    }
 
-  &:active {
-    color: #6b6b6b;
+    &:active {
+      color: #6b6b6b;
+    }
   }
+}
+
+.logo__letter {
+  margin-left: 56px;
 }

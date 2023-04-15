@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   // flex-direction: column;
   font-family: inherit;
   background-color: #ffffff;
@@ -8,6 +9,7 @@
 
 .header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 65px;

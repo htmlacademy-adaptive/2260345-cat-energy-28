@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -9,6 +10,7 @@
 
 .footer__academy-logo-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 

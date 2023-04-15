@@ -19,11 +19,13 @@
 
 .example__list-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .example__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   align-items: center;
   margin: 0;
@@ -44,4 +46,5 @@
 
 .example__slider {
   display: flex;
+  flex-wrap: wrap;
 }

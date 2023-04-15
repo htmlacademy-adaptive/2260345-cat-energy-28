@@ -12,6 +12,7 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   padding: 0;

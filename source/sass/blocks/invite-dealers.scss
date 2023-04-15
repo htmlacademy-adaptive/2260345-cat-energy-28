@@ -2,6 +2,7 @@
 
 .invite-dealers {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   &--secondary {
@@ -11,6 +12,7 @@
 
 .invite-dealers__wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 26px 20px;
 }
