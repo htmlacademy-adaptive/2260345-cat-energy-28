@@ -2,6 +2,8 @@
 
 .button {
   display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: appercase;
@@ -14,7 +16,7 @@
   height: 40px;
 
   &--program {
-    padding: 7px 44px;
+    padding: 10px 44px;
     font-size: 14px;
     line-height: 18px;
     height: 40px;
@@ -22,5 +24,6 @@
 
   &--secondary {
     background-color: #f2f2f2;
+    color: #444444;
   }
 }

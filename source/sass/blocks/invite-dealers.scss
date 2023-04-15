@@ -3,6 +3,10 @@
 .invite-dealers {
   display: flex;
   flex-direction: column;
+
+  &--secondary {
+    background-color: #f2f2f2;
+  }
 }
 
 .invite-dealers__wrapper {

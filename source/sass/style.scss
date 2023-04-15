@@ -2,7 +2,7 @@
 @use "base/fonts.scss";
 @use "base/base.scss";
 
-// Блоки
+// Блоки index
 @use "blocks/header.scss";
 @use "blocks/logo.scss";
 @use "blocks/button.scss";
@@ -17,3 +17,9 @@
 @use "blocks/invite-dealers.scss";
 @use "blocks/footer.scss";
 @use "blocks/social.scss";
+
+//Блоки catalog
+@use "blocks/catalog.scss";
+@use "blocks/product-card.scss";
+@use "blocks/catalog-additional.scss";
+@use "blocks/promotion.scss";
