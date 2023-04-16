@@ -1,0 +1,28 @@
+
+@use "../mixins.scss" as *;
+
+.promotion {
+  margin: 0 20px;
+}
+
+.promotion__description {
+  @include site-content;
+  position: relative;
+  padding: 187px 59px 43px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/green-catalog.png"), url("../img/cat-carrier.jpg");
+  background-repeat: no-repeat, no-repeat;
+
+  &::before {
+    position: absolute;
+    top: 59px;
+    left: 101px;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background: url("../img/icons/gift-icon.svg") no-repeat;
+  }
+}

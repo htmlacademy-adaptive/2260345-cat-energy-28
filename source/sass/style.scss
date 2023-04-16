@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// Базовые стили
+@use "base/fonts.scss";
+@use "base/base.scss";
+
+// Блоки index
+@use "blocks/header.scss";
+@use "blocks/logo.scss";
+@use "blocks/button.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/nav-closed.scss";
+@use "blocks/main-container.scss";
+@use "blocks/hero.scss";
+@use "blocks/nutrition-program.scss";
+@use "blocks/diet-card.scss";
+@use "blocks/advantages.scss";
+@use "blocks/example.scss";
+@use "blocks/invite-dealers.scss";
+@use "blocks/footer.scss";
+@use "blocks/social.scss";
+
+//Блоки catalog
+@use "blocks/catalog.scss";
+@use "blocks/product-card.scss";
+@use "blocks/catalog-additional.scss";
+@use "blocks/promotion.scss";
+
+//Блоки form
+@use "blocks/form-container.scss";
+@use "blocks/form.scss";

@@ -1,0 +1,14 @@
+@mixin site-title($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: 0;
+  font-weight: 400;
+}
+
+@mixin site-content {
+  margin: 0;
+  font-family: var(--secondary-font);
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}

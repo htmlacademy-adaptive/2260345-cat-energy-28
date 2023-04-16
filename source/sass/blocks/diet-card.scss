@@ -1,0 +1,59 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+
+.diet-card {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+  background-color: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: $main-color;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--slim {
+    &::after {
+      position: absolute;
+      width: 36px;
+      height: 50px;
+      top: 21px;
+      left: 29px;
+      background: url("../img/icons/slim-icon.svg") no-repeat;
+      content: "";
+    }
+  }
+
+  &--pro {
+    &::after {
+      position: absolute;
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 13px;
+      background: url("../img/icons/pro-icon.svg") no-repeat;
+      content: "";
+    }
+  }
+}
+
+.diet-card__title {
+  @include site-title(24px, 37px);
+  margin-left: 91px;
+  margin-bottom: 29px;
+}
+
+.diet-card__intro {
+  @include site-content;
+  margin-bottom: 42px;
+}
+
+.diet-card__link {
+  @include site-title(16px, 16px);
+  color: #000000;
+}

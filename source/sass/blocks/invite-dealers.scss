@@ -1,0 +1,35 @@
+@use "../mixins.scss" as *;
+
+.invite-dealers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &--secondary {
+    background-color: #f2f2f2;
+  }
+}
+
+.invite-dealers__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px;
+}
+
+.invite-dealers__title {
+  @include site-title(16px, 20px);
+}
+
+.invite-dealers__address {
+  @include site-content;
+}
+
+.invite-dealers__map-wrapper {
+  position: relative;
+}
+
+.invite-dealers__map-pin {
+  position: absolute;
+  top: 139px;
+  left: 134px;
+}
