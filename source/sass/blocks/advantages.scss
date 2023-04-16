@@ -34,51 +34,48 @@
     content: "";
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
   &--benefit {
     &::after {
-      position: absolute;
       width: 25px;
       height: 28px;
       top: 16px;
       left: -62px;
       background: url("../img/icons/benefit-icon.svg") no-repeat;
-      content: "";
     }
   }
 
   &--release-form {
     &::after {
-      position: absolute;
       width: 26px;
       height: 29px;
       top: 16px;
       left: -62px;
       background: url("../img/icons/release-form-icon.svg") no-repeat;
-      content: "";
     }
   }
 
   &--replace-food {
     &::after {
-      position: absolute;
       width: 25px;
       height: 30px;
       top: 16px;
       left: -62px;
       background: url("../img/icons/replace-food-icon.svg") no-repeat;
-      content: "";
     }
   }
 
   &--fast-result {
     &::after {
-      position: absolute;
       width: 26px;
       height: 31px;
       top: 16px;
       left: -62px;
       background: url("../img/icons/fast-result-icon.svg") no-repeat;
-      content: "";
     }
   }
 }
