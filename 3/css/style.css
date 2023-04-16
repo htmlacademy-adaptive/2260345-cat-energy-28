@@ -196,12 +196,12 @@ a {
 }
 
 .hero__title {
+  font-size: 36px;
+  line-height: 36px;
   margin: 0;
   font-weight: 400;
   margin-bottom: 25px;
   text-align: center;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .hero__subtitle {
@@ -265,12 +265,12 @@ a {
 }
 
 .diet-card__title {
+  font-size: 24px;
+  line-height: 37px;
   margin: 0;
   font-weight: 400;
   margin-left: 91px;
   margin-bottom: 29px;
-  font-size: 24px;
-  line-height: 37px;
 }
 
 .diet-card__intro {
@@ -283,11 +283,11 @@ a {
 }
 
 .diet-card__link {
+  font-size: 16px;
+  line-height: 16px;
   margin: 0;
   font-weight: 400;
   color: #000000;
-  font-size: 16px;
-  line-height: 16px;
 }
 
 .advantages {
@@ -295,6 +295,8 @@ a {
 }
 
 .advantages__title {
+  font-size: 36px;
+  line-height: 40px;
   margin: 0;
   font-weight: 400;
   margin-bottom: 40px;
@@ -370,10 +372,10 @@ a {
 }
 
 .example__title {
+  font-size: 36px;
+  line-height: 40px;
   margin: 0;
   font-weight: 400;
-  font-size: 36px;
-  font-weight: 40px;
   margin-bottom: 40px;
 }
 
@@ -408,14 +410,14 @@ a {
   font-size: 14px;
   line-height: 18px;
   font-size: 12px;
-  font-weight: 12px;
+  line-height: 12px;
 }
 
 .example__description {
+  font-size: 24px;
+  line-height: 24px;
   margin: 0;
   font-weight: 400;
-  font-size: 24px;
-  font-weight: 24px;
 }
 
 .example__slider {
@@ -434,12 +436,13 @@ a {
 
 .invite-dealers__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   padding: 26px 20px;
 }
 
 .invite-dealers__title {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
   font-weight: 400;
 }
@@ -528,12 +531,12 @@ a {
 }
 
 .catalog__title {
+  font-size: 36px;
+  line-height: 36px;
   margin: 0;
   font-weight: 400;
   margin-top: 27px;
   margin-bottom: 41px;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .product-card {
@@ -562,6 +565,7 @@ a {
 }
 .product-card--show-more .product-card__title {
   margin-bottom: 8px;
+  padding: 0;
 }
 .product-card--show-more .product-card__subtitle {
   margin: 0;
@@ -578,6 +582,9 @@ a {
   align-items: stretch;
   row-gap: 14px;
 }
+.product-card--additional .product-card__title {
+  line-height: 16px;
+}
 
 .product-card__image {
   justify-self: center;
@@ -586,13 +593,13 @@ a {
 }
 
 .product-card__title {
-  margin: 0;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  font-weight: 400;
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-right: 64px;
+  padding-right: 64px;
 }
 
 .product-card__description {
@@ -619,10 +626,10 @@ a {
 }
 
 .catalog-additional__title {
-  margin: 0;
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  font-weight: 400;
 }
 
 .promotion {
@@ -662,18 +669,18 @@ a {
 }
 
 .form-container__title {
-  margin: 0;
-  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  font-weight: 400;
   margin-bottom: 37px;
 }
 
 .form-container__subtitle {
-  margin: 0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  font-weight: 400;
   margin-bottom: 39px;
   margin-right: 64px;
 }
@@ -712,6 +719,8 @@ a {
 }
 
 .form__label {
+  font-size: 16px;
+  line-height: 18px;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -728,15 +737,17 @@ a {
 }
 
 .form__title {
+  font-size: 24px;
+  line-height: 26px;
   margin: 0;
   font-weight: 400;
   padding-right: 93px;
-  font-size: 24px;
-  line-height: 26px;
   margin-bottom: 35px;
 }
 
 .form__comment {
+  font-size: 16px;
+  line-height: 18px;
   margin: 0;
   font-weight: 400;
   padding: 10px 12px 125px 15px;
@@ -744,8 +755,6 @@ a {
   border: none;
   text-transform: uppercase;
   color: #444444;
-  font-size: 16px;
-  line-height: 18px;
 }
 
 .form__footnote {
