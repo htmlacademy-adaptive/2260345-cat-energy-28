@@ -6,11 +6,22 @@
   flex-direction: column;
   gap: 20px;
   margin: 0 20px;
+  padding: 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition-program {
     gap: 30px;
-    margin: 0 30px;
+    padding: 0;
+    margin: 0 30px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition-program {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin: 0 110px 71px;
   }
 }
