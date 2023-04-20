@@ -37,14 +37,14 @@
   &::after {
     position: absolute;
     content: "";
+    top: 16px;
+    left: -62px;
   }
 
   &--benefit {
     &::after {
       width: 25px;
       height: 28px;
-      top: 16px;
-      left: -62px;
       background: url("../img/icons/benefit-icon.svg") no-repeat;
     }
   }
@@ -53,8 +53,6 @@
     &::after {
       width: 26px;
       height: 29px;
-      top: 16px;
-      left: -62px;
       background: url("../img/icons/release-form-icon.svg") no-repeat;
     }
   }
@@ -63,8 +61,6 @@
     &::after {
       width: 25px;
       height: 30px;
-      top: 16px;
-      left: -62px;
       background: url("../img/icons/replace-food-icon.svg") no-repeat;
     }
   }
@@ -73,9 +69,184 @@
     &::after {
       width: 26px;
       height: 31px;
-      top: 16px;
-      left: -62px;
       background: url("../img/icons/fast-result-icon.svg") no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin: 0 30px 90px;
+  }
+
+  .advantages__title {
+    @include site-title(60px, 60px);
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 0;
+  }
+
+  .advantages__item {
+    @include site-content(16px, 24px);
+    position: relative;
+    // min-height: 280px;
+    padding: 151px 0 57px;
+
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+      background-color: $main-color;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 65px;
+      left: 27px;
+    }
+
+    &--benefit {
+      margin-right: 124px;
+      background: url("../img/icons/1.svg") no-repeat center right;
+
+      &::after {
+        width: 25px;
+        height: 28px;
+        background: url("../img/icons/benefit-icon.svg") no-repeat;
+      }
+    }
+
+    &--release-form {
+      margin-right: 100px;
+      background: url("../img/icons/2.svg") no-repeat center right;
+
+      &::after {
+        width: 26px;
+        height: 29px;
+        background: url("../img/icons/release-form-icon.svg") no-repeat;
+      }
+    }
+
+    &--replace-food {
+      margin-right: 107px;
+      background: url("../img/icons/3.svg") no-repeat center right;
+
+      &::after {
+        width: 25px;
+        height: 30px;
+        background: url("../img/icons/replace-food-icon.svg") no-repeat;
+      }
+    }
+
+    &--fast-result {
+      margin-right: 74px;
+      background: url("../img/icons/4.svg") no-repeat center right;
+
+      &::after {
+        width: 26px;
+        height: 31px;
+        background: url("../img/icons/fast-result-icon.svg") no-repeat;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin: 0 100px 69px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .advantages__item {
+    @include site-content(16px, 24px);
+    position: relative;
+    padding: 151px 0 57px;
+
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+      background-color: $main-color;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 65px;
+      left: 27px;
+    }
+
+    &--benefit {
+      width: 230px;
+      margin-right: 94px;
+      background: url("../img/icons/1.svg") no-repeat center right;
+
+      &::after {
+        width: 25px;
+        height: 28px;
+        background: url("../img/icons/benefit-icon.svg") no-repeat;
+      }
+    }
+
+    &--release-form {
+      width: 246px;
+      margin-right: 80px;
+      background: url("../img/icons/2.svg") no-repeat center right;
+
+      &::after {
+        width: 26px;
+        height: 29px;
+        background: url("../img/icons/release-form-icon.svg") no-repeat;
+      }
+    }
+
+    &--replace-food {
+      width: 248px;
+      margin-right: 78px;
+      background: url("../img/icons/3.svg") no-repeat center right;
+
+      &::after {
+        width: 25px;
+        height: 30px;
+        background: url("../img/icons/replace-food-icon.svg") no-repeat;
+      }
+    }
+
+    &--fast-result {
+      width: 250px;
+      margin-right: 0;
+      background: url("../img/icons/4.svg") no-repeat center right;
+
+      &::after {
+        width: 26px;
+        height: 31px;
+        background: url("../img/icons/fast-result-icon.svg") no-repeat;
+      }
     }
   }
 }
