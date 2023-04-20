@@ -1,7 +1,16 @@
+@use "../variables.scss" as *;
+
 .nutrition-program {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
-  padding: 0 20px;
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition-program {
+    gap: 30px;
+    margin: 0 30px;
+  }
 }

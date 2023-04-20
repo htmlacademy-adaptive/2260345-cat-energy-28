@@ -49,11 +49,70 @@
 }
 
 .diet-card__intro {
-  @include site-content;
+  @include site-content(14px, 18px);
   margin-bottom: 42px;
 }
 
 .diet-card__link {
   @include site-title(16px, 16px);
+  text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .diet-card {
+    padding: 77px 62px 57px 52px;
+
+    &::before {
+      position: absolute;
+      top: 91px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+      background-color: $main-color;
+      border-radius: 50%;
+      content: "";
+    }
+
+    &--slim {
+      &::after {
+        position: absolute;
+        width: 36px;
+        height: 50px;
+        top: 81px;
+        left: 476px;
+        background: url("../img/icons/slim-icon.svg") no-repeat;
+        content: "";
+      }
+    }
+
+    &--pro {
+      &::after {
+        position: absolute;
+        width: 67px;
+        height: 28px;
+        top: 135px;
+        left: 412px;
+        background: url("../img/icons/pro-icon.svg") no-repeat;
+        content: "";
+      }
+    }
+  }
+
+  .diet-card__title {
+    @include site-title(36px, 36px);
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .diet-card__intro {
+    @include site-content (16px, 24px);
+    margin-right: 316px;
+    margin-bottom: 52px;
+  }
+
+  .diet-card__link {
+    @include site-title(20px, 30px);
+    color: #000000;
+  }
 }

@@ -1,12 +1,14 @@
 @use "../variables.scss" as *;
 
 .button {
-  display: inline-block;
+  display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-sizing: border-box;
   text-align: center;
   text-decoration: none;
-  text-transform: appercase;
+  text-transform: uppercase;
+  vertical-align: middle;
   background-color: $main-color;
   color: #ffffff;
   font-family: var(--primary-font);
@@ -30,5 +32,38 @@
   &--submit {
     border: none;
     margin-top: 11px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+
+    &--program {
+      z-index: 1;
+      width: 244px;
+      height: 54px;
+      padding: 14px 26px;
+      line-height: 20px;
+      margin-left: 91px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 20px;
+
+    &--program {
+      z-index: 0;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      width: 244px;
+      height: 54px;
+      padding: 14px 26px;
+      line-height: 20px;
+      margin-left: 190px;
+      margin-bottom: 185px;
+    }
   }
 }

@@ -1,16 +1,30 @@
+@use "../variables.scss" as *;
+
 .header {
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: column;
+  justify-content: space-between;
   font-family: inherit;
   background-color: #ffffff;
   padding: 10px 20px 17px;
 }
 
-.header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 65px;
+@media (min-width: $tablet-width) {
+  .header {
+    min-height: 52px;
+    margin: 0 30px;
+    gap: 94px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    align-items: flex-end;
+    z-index: 1;
+    background-color: transparent;
+    min-height: 108px;
+    margin: 0 110px;
+    padding: 53px 0 32px;
+  }
 }

@@ -64,8 +64,7 @@
 }
 
 .form__footnote {
-  @include site-content;
-  line-height: 16px;
+  @include site-content (14px, 16px);
   color: #000000;
   align-self: center;
 }

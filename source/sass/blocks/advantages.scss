@@ -21,7 +21,7 @@
 }
 
 .advantages__item {
-  @include site-content;
+  @include site-content(14px, 18px);
   position: relative;
   margin-left: 80px;
 

@@ -6,7 +6,7 @@
 }
 
 .promotion__description {
-  @include site-content;
+  @include site-content(14px, 18px);
   position: relative;
   padding: 187px 59px 43px;
   text-align: center;

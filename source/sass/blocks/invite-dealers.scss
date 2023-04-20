@@ -21,7 +21,7 @@
 }
 
 .invite-dealers__address {
-  @include site-content;
+  @include site-content (14px, 18px);
 }
 
 .invite-dealers__map-wrapper {
