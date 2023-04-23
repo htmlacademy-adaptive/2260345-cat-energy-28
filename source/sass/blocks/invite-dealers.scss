@@ -18,6 +18,7 @@
 
 .invite-dealers__title {
   @include site-title(16px, 20px);
+  text-transform: uppercase;
 }
 
 .invite-dealers__address {

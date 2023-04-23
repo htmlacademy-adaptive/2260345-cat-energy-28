@@ -6,15 +6,15 @@
   justify-content: space-between;
   font-family: inherit;
   background-color: #ffffff;
-  padding: 10px 20px 17px;
+  padding: 10px 0 17px;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .header {
     min-height: 52px;
-    margin: 0 30px;
-    gap: 94px;
-    margin-bottom: 62px;
+    margin: 0 30px 62px;
+    padding: 0;
   }
 }
 
