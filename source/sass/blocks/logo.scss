@@ -1,3 +1,5 @@
+@use "../variables.scss" as *;
+
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -20,4 +22,10 @@
 
 .logo__letter {
   margin-left: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__letter {
+    margin-left: 12px;
+  }
 }

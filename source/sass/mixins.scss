@@ -5,10 +5,10 @@
   font-weight: 400;
 }
 
-@mixin site-content {
+@mixin site-content ($font-size, $line-height) {
   margin: 0;
   font-family: var(--secondary-font);
   color: #444444;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: $font-size;
+  line-height: $line-height;
 }
