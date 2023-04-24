@@ -87,13 +87,14 @@
         </defs>
       </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        Открыть меню
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" aria-label="Открыть меню.">
       </button>
-      <a class="main-nav__link main-nav__link--current">Главная</a>
-      <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-      <a class="main-nav__link" href="form.html">Подбор программы</a>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__link main-nav__link--current">Главная</a>
+        <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        <a class="main-nav__link" href="form.html">Подбор программы</a>
+      </div>
     </nav>
   </header>
   <main class="main-container">

@@ -2,18 +2,19 @@
 
 .header {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: inherit;
   background-color: #ffffff;
-  padding: 10px 0 17px;
-  margin: 0 20px;
+  margin: 10px 20px 17px;
 }
 
 @media (min-width: $tablet-width) {
   .header {
+    flex-direction: row;
     min-height: 52px;
-    margin: 0 30px 62px;
+    margin: 0 30px 64px;
     padding: 0;
   }
 }
