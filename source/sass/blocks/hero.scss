@@ -1,6 +1,10 @@
 @use "../mixins.scss" as *;
 @use "../variables.scss" as *;
 
+.hero {
+  position: relative;
+}
+
 .hero__container {
   @include site-container;
   display: flex;
@@ -42,7 +46,7 @@
     &::after {
       width: 552px;
       height: 499px;
-      top: 141px;
+      top: 200px;
       left: 558px;
       background: url("../img/index-can.png") no-repeat;
     }
@@ -54,9 +58,9 @@
   flex-direction: column;
   gap: 25px;
   padding: 27px 5px 164px;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/green.png"), url("../img/cat.png");
-  background-repeat: no-repeat, no-repeat;
+  // background-color: rgba(104, 183, 56, 0.85);
+  // background-image: url("../img/green.png"), url("../img/cat.png");
+  // background-repeat: no-repeat, no-repeat;
   margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
@@ -65,13 +69,13 @@
     margin-bottom: 49px;
     color: #000000;
     background-color: #ffffff;
-    background-image: none;
+    // background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     align-self: end;
     padding: 0;
-    padding-left: 190px;
+    padding-left: 80px;
     margin-bottom: 52px;
   }
 }
@@ -113,15 +117,46 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .hero__decor-wrapper {
-    grid-row: 1/3;
-    grid-column: 2/3;
+.hero__decor-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(104, 183, 56, 0.85);
+  min-height: 302px;
+  // background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/green.png"), url("../img/cat.png");
+  background-repeat: no-repeat, no-repeat;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 720px;
+    min-height: 694px;
+    width: 50%;
+    // grid-row: 1/3;
+    // grid-column: 2/3;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/green.png"), url("../img/cat.png");
+    background-image: url("../img/green-desktop.png"), url("../img/index-background-desktop1.png");
     background-repeat: no-repeat, no-repeat;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .hero__decor-wrapper {
+//     grid-row: 1/3;
+//     grid-column: 2/3;
+//     background-color: rgba(104, 183, 56, 0.85);
+//     background-image: url("../img/green.png"), url("../img/cat.png");
+//     background-repeat: no-repeat, no-repeat;
+//   }
+// }
 
 // @media (min-width: $tablet-width) {
 //   .hero__container {
