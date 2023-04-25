@@ -1,6 +1,7 @@
 // Базовые стили
 @use "base/fonts.scss";
 @use "base/base.scss";
+@use "blocks/site-container.scss";
 
 // Блоки index
 @use "blocks/header.scss";

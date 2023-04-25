@@ -1,31 +1,32 @@
 @use "../variables.scss" as *;
+@use "../mixins.scss" as *;
 
-.header {
+.header__container {
+  @include site-container;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: inherit;
   background-color: #ffffff;
-  margin: 10px 20px 17px;
-}
+  padding-top: 10px;
+  padding-bottom: 17px;
 
-@media (min-width: $tablet-width) {
-  .header {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: flex-end;
     min-height: 52px;
-    margin: 0 30px 64px;
-    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    background-color: transparent;
+    min-height: 108px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    align-items: flex-end;
     z-index: 1;
-    background-color: transparent;
-    min-height: 108px;
-    margin: 0 110px;
-    padding: 0;
   }
 }

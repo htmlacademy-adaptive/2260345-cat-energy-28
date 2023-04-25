@@ -12,19 +12,19 @@ body {
   color: #000000;
   background-color: #ffffff;
   min-height: 100%;
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   body {
-    width: 770px;
+    // width: 770px;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
-    width: 1440px;
+    // width: 1440px;
   }
 }
 
