@@ -6,6 +6,14 @@
   padding: 30px 33px 18px 20px;
   background-color: $bgcolor-secondary;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+  }
+
   &::before {
     position: absolute;
     top: 24px;
@@ -15,6 +23,20 @@
     background-color: $main-color;
     border-radius: 50%;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--slim {
@@ -26,6 +48,22 @@
       left: 29px;
       background: url("../img/icons/slim-icon.svg") no-repeat;
       content: "";
+
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 194px;
+        top: 81px;
+        left: 476px;
+        background: url("../img/icons/slim-icon-tablet.svg") no-repeat;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 67px;
+        background: url("../img/icons/slim-icon-desk.svg") no-repeat;
+      }
     }
   }
 
@@ -38,6 +76,22 @@
       left: 13px;
       background: url("../img/icons/pro-icon.svg") no-repeat;
       content: "";
+
+      @media (min-width: $tablet-width) {
+        width: 269px;
+        height: 113px;
+        top: 135px;
+        left: 412px;
+        background: url("../img/icons/pro-icon-tablet.svg") no-repeat;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 57px;
+        top: 67px;
+        left: 33px;
+        background: url("../img/icons/pro-icon-desk.svg") no-repeat;
+      }
     }
   }
 }
@@ -46,129 +100,155 @@
   @include site-title(24px, 37px);
   margin-left: 91px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    @include site-title(36px, 36px);
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 162px;
+  }
 }
 
 .diet-card__intro {
   @include site-content(14px, 18px);
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    @include site-content (16px, 24px);
+    margin-right: 316px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include site-content (16px, 24px);
+    margin: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .diet-card__link {
   @include site-title(16px, 16px);
   text-transform: uppercase;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .diet-card {
-    padding: 77px 62px 57px 52px;
-
-    &::before {
-      position: absolute;
-      top: 91px;
-      left: 446px;
-      width: 200px;
-      height: 200px;
-      background-color: $main-color;
-      border-radius: 50%;
-      content: "";
-    }
-
-    &--slim {
-      &::after {
-        position: absolute;
-        width: 36px;
-        height: 50px;
-        top: 81px;
-        left: 476px;
-        background: url("../img/icons/slim-icon.svg") no-repeat;
-        content: "";
-      }
-    }
-
-    &--pro {
-      &::after {
-        position: absolute;
-        width: 67px;
-        height: 28px;
-        top: 135px;
-        left: 412px;
-        background: url("../img/icons/pro-icon.svg") no-repeat;
-        content: "";
-      }
-    }
-  }
-
-  .diet-card__title {
-    @include site-title(36px, 36px);
-    margin: 0;
-    margin-bottom: 24px;
-  }
-
-  .diet-card__intro {
-    @include site-content (16px, 24px);
-    margin-right: 316px;
-    margin-bottom: 52px;
-  }
-
-  .diet-card__link {
+  @media (min-width: $tablet-width) {
     @include site-title(20px, 30px);
-    color: #000000;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .diet-card {
-    padding: 77px 62px 55px 52px;
+// @media (min-width: $tablet-width) {
+//   .diet-card {
+//     padding: 77px 62px 57px 52px;
 
-    &::before {
-      position: absolute;
-      top: 47px;
-      left: 52px;
-      width: 100px;
-      height: 100px;
-      background-color: $main-color;
-      border-radius: 50%;
-      content: "";
-    }
+//     &::before {
+//       position: absolute;
+//       top: 91px;
+//       left: 446px;
+//       width: 200px;
+//       height: 200px;
+//       background-color: $main-color;
+//       border-radius: 50%;
+//       content: "";
+//     }
 
-    &--slim {
-      &::after {
-        position: absolute;
-        width: 70px;
-        height: 97px;
-        top: 41px;
-        left: 67px;
-        background: url("../img/icons/slim-icon.svg") no-repeat;
-        content: "";
-      }
-    }
+//     &--slim {
+//       &::after {
+//         position: absolute;
+//         width: 36px;
+//         height: 50px;
+//         top: 81px;
+//         left: 476px;
+//         background: url("../img/icons/slim-icon.svg") no-repeat;
+//         content: "";
+//       }
+//     }
 
-    &--pro {
-      &::after {
-        position: absolute;
-        width: 134px;
-        height: 56px;
-        top: 67px;
-        left: 33px;
-        background: url("../img/icons/pro-icon.svg") no-repeat;
-        content: "";
-      }
-    }
-  }
+//     &--pro {
+//       &::after {
+//         position: absolute;
+//         width: 67px;
+//         height: 28px;
+//         top: 135px;
+//         left: 412px;
+//         background: url("../img/icons/pro-icon.svg") no-repeat;
+//         content: "";
+//       }
+//     }
+//   }
 
-  .diet-card__title {
-    margin: 0 0 73px 162px;
-  }
+//   .diet-card__title {
+//     @include site-title(36px, 36px);
+//     margin: 0;
+//     margin-bottom: 24px;
+//   }
 
-  .diet-card__intro {
-    @include site-content (16px, 24px);
-    margin: 0;
-    margin-bottom: 23px;
-  }
+//   .diet-card__intro {
+//     @include site-content (16px, 24px);
+//     margin-right: 316px;
+//     margin-bottom: 52px;
+//   }
 
-  .diet-card__link {
-    @include site-title(20px, 30px);
-    color: #000000;
-  }
-}
+//   .diet-card__link {
+//     @include site-title(20px, 30px);
+//     color: #000000;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .diet-card {
+//     padding: 77px 62px 55px 52px;
+
+//     &::before {
+//       position: absolute;
+//       top: 47px;
+//       left: 52px;
+//       width: 100px;
+//       height: 100px;
+//       background-color: $main-color;
+//       border-radius: 50%;
+//       content: "";
+//     }
+
+//     &--slim {
+//       &::after {
+//         position: absolute;
+//         width: 70px;
+//         height: 97px;
+//         top: 41px;
+//         left: 67px;
+//         background: url("../img/icons/slim-icon.svg") no-repeat;
+//         content: "";
+//       }
+//     }
+
+//     &--pro {
+//       &::after {
+//         position: absolute;
+//         width: 134px;
+//         height: 56px;
+//         top: 67px;
+//         left: 33px;
+//         background: url("../img/icons/pro-icon.svg") no-repeat;
+//         content: "";
+//       }
+//     }
+//   }
+
+//   .diet-card__title {
+//     margin: 0 0 73px 162px;
+//   }
+
+//   .diet-card__intro {
+//     @include site-content (16px, 24px);
+//     margin: 0;
+//     margin-bottom: 23px;
+//   }
+
+//   .diet-card__link {
+//     @include site-title(20px, 30px);
+//     color: #000000;
+//   }
+// }
