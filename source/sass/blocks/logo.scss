@@ -3,6 +3,7 @@
 .logo {
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
   align-items: center;
   text-decoration: none;
   color: #111111;
@@ -22,10 +23,14 @@
 
 .logo__letter {
   margin-left: 56px;
-}
 
-@media (min-width: $tablet-width) {
-  .logo__letter {
+  @media (min-width: $tablet-width) {
     margin-left: 12px;
   }
 }
+
+// @media (min-width: $tablet-width) {
+//   .logo__letter {
+//     margin-left: 12px;
+//   }
+// }
