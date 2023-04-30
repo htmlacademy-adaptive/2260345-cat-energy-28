@@ -98,6 +98,17 @@
   }
 }
 
+.invite-dealers__map-wrapper iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
+
 // .invite-dealers__map-pin {
 //   position: absolute;
 //   top: 139px;

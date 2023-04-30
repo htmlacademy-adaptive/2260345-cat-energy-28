@@ -2,7 +2,8 @@
 @use "../mixins.scss" as *;
 
 .promotion {
-  margin: 0 20px;
+  @include site-container;
+  padding-top: 54px;
 }
 
 .promotion__description {
