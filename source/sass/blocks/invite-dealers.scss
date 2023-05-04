@@ -101,7 +101,7 @@
 .invite-dealers__map-wrapper iframe {
   border: none;
   display: block;
-  width: 100%;
+  width: 100vw;
   min-height: 362px;
 
   @media (min-width: $tablet-width) {

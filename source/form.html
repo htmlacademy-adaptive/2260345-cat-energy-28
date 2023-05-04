@@ -132,22 +132,22 @@
             <label class="form__label" for="need-help">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--owner">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <div class="form__input-wrapper">
             <label class="form__label" for="form__email">E-mail:*</label>
-            <input class="form__input form__input--email" id="form__email" name="e-mail" type="email" required>
+            <input class="form__input form__input--email" id="form__email" name="e-mail" type="email"  placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="form__input-wrapper">
             <label class="form__label" for="form__tel">Телефон:*</label>
-            <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel" required>
+            <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--comment">
           <legend class="form__title">Комментарий</legend>
           <textarea class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--additional">
           <legend class="form__title">Дополнительно</legend>
           <label class="form__label" for="sweetener">Сахарозаменитель</label>
           <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
@@ -168,6 +168,7 @@
         <p class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="invite-dealers__map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682891325613!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

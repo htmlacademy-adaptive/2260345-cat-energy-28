@@ -2,11 +2,12 @@
 @use "../mixins.scss" as *;
 
 .footer {
-  @include site-container;
+  width: 100vw;
   background-color: $bgcolor-secondary;
 }
 
 .footer__container {
+  @include site-container;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

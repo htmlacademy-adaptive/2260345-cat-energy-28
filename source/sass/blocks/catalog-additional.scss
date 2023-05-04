@@ -1,4 +1,5 @@
 @use "../mixins.scss" as *;
+@use "../variables.scss" as *;
 
 .catalog-additional {
   @include site-container;
@@ -6,7 +7,11 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 32px;
-  padding: 0 20px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 69px 28px;
+  }
 }
 
 .catalog-additional__title {

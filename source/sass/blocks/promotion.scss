@@ -1,21 +1,33 @@
 
 @use "../mixins.scss" as *;
+@use "../variables.scss" as *;
 
 .promotion {
   @include site-container;
-  padding-top: 54px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 69px;
+    padding-bottom: 76px;
+  }
 }
 
 .promotion__description {
-  @include site-content(14px, 18px);
+  @include site-content(16px, 20px);
   position: relative;
   padding: 187px 59px 43px;
   text-align: center;
   color: #ffffff;
-  line-height: 20px;
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../img/green-catalog.png"), url("../img/cat-carrier.jpg");
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+    background-image: url("../img/green-catalog-tablet.png"), url("../img/cat-carrier-tablet.jpg");
+  }
 
   &::before {
     position: absolute;

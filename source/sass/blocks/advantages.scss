@@ -2,6 +2,10 @@
 @use "../variables.scss" as *;
 
 .advantages {
+  width: 100vw;
+}
+
+.advantages__container {
   @include site-container;
   padding-bottom: 49px;
 

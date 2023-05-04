@@ -1,6 +1,10 @@
 @use "../variables.scss" as *;
 @use "../mixins.scss" as *;
 
+.header {
+  width: 100vw;
+}
+
 .header__container {
   @include site-container;
   display: flex;
