@@ -127,4 +127,8 @@
       border-bottom: 2px solid #ffffff;
     }
   }
+
+  .main-nav__link--current.main-nav__link--secondary {
+    border-bottom: 2px solid #68b738;
+  }
 }

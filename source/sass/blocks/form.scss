@@ -38,12 +38,67 @@
 .form__input-wrapper {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  // flex-grow: 1;
   gap: 10px;
 }
 
 .form__label {
   @include site-title(16px, 18px);
+  text-transform: uppercase;
+  padding: 6px 0;
+
+  &--radio {
+    position: relative;
+    margin-left: 45px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: -35px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    margin-left: 45px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -45px;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #cdcdcd;
+    }
+
+    &::after {
+      position: absolute;
+      // content: "";
+      top: 0;
+      left: -45px;
+      width: 26px;
+      height: 26px;
+      background: url("../img/icons/tick-icon.svg") no-repeat;
+    }
+  }
 }
 
 .form__input {
@@ -54,6 +109,14 @@
   line-height: 18px;
   padding: 14px 15px;
   border: 1px solid #e7e7e7;
+}
+
+.form__input[type="radio"]:checked + .form__label--radio::after {
+  content: "";
+}
+
+.form__input[type="checkbox"]:checked + .form__label--checkbox::after {
+  content: "";
 }
 
 .form__title {

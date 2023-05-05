@@ -114,7 +114,7 @@
               <input class="form__input" id="form__name" name="name" type="text" placeholder="Барсик" required>
             </div>
             <div class="form__input-wrapper">
-              <label class="form__label" for="form__weight">Вес:*</label>
+              <label class="form__label" for="form__weight">Вес(кг):*</label>
               <input class="form__input" id="form__weight" name="weight" type="text" placeholder="7" required>
             </div>
             <div class="form__input-wrapper">
@@ -125,11 +125,11 @@
           <fieldset class="form__fieldset" aria-label="Выбор программы">
             <input class="form__input visually-hidden" id="weight-loss" type="radio" name="program" value="weight-loss"
               checked>
-            <label class="form__label" for="weight-loss">Похудение</label>
+            <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
             <input class="form__input visually-hidden" id="weight-gain" type="radio" name="program" value="weight-gain">
-            <label class="form__label" for="weight-gain">Набор массы</label>
+            <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
             <input class="form__input visually-hidden" id="need-help" type="radio" name="program" value="need-help">
-            <label class="form__label" for="need-help">Не знаю (нужен ваш совет)</label>
+            <label class="form__label form__label--radio" for="need-help">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--owner">
@@ -149,14 +149,14 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--additional">
           <legend class="form__title">Дополнительно</legend>
-          <label class="form__label" for="sweetener">Сахарозаменитель</label>
           <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-          <label class="form__label" for="drinking-water">Питьевая вода</label>
+          <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
           <input class="form__input visually-hidden" id="drinking-water" type="checkbox" name="drinking-water">
-          <label class="form__label" for="milk">Молоко</label>
+          <label class="form__label form__label--checkbox" for="drinking-water">Питьевая вода</label>
           <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
-          <label class="form__label" for="vitamins">Витамины</label>
+          <label class="form__label form__label--checkbox" for="milk">Молоко</label>
           <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+          <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
         </fieldset>
         <button class="button button--submit" type="submit">Отправить заявку</button>
         <p class="form__footnote">* - Обязательные поля</p>
