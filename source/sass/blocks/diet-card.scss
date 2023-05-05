@@ -26,7 +26,8 @@
 
     @media (min-width: $tablet-width) {
       top: 91px;
-      left: 446px;
+      right: 62px;
+      left: auto;
       width: 200px;
       height: 200px;
     }
@@ -53,7 +54,8 @@
         width: 140px;
         height: 194px;
         top: 81px;
-        left: 476px;
+        left: auto;
+        right: 92px;
         background: url("../img/icons/slim-icon-tablet.svg") no-repeat;
       }
 
@@ -81,7 +83,8 @@
         width: 269px;
         height: 113px;
         top: 135px;
-        left: 412px;
+        right: 62px;
+        left: auto;
         background: url("../img/icons/pro-icon-tablet.svg") no-repeat;
       }
 

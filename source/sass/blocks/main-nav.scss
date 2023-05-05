@@ -101,10 +101,20 @@
     color: #000000;
     text-transform: uppercase;
 
+    @media (min-width: $tablet-width) {
+      &--secondary {
+        color: #000000;
+      }
+    }
+
     @media (min-width: $desktop-width) {
       @include site-title(20px, 30px);
       text-transform: uppercase;
       color: #ffffff;
+
+      &--secondary {
+        color: #000000;
+      }
     }
   }
 

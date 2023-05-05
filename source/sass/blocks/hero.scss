@@ -6,12 +6,43 @@
   position: relative;
   padding-bottom: 20px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 302px;
+    background-color: #639e40;
+    background-image: url("../img/green.png"), url("../img/cat.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, top center;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      z-index: 0;
+      right: 0;
+      min-width: 720px;
+      min-height: 694px;
+      background-color: transparent;
+      background-image: url("../img/green-desktop.png"), url("../img/index-background-desktop1.png");
+      background-position: top right, top right;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 694px;
     padding-bottom: 82px;
+    margin-top: -108px;
   }
 }
 
@@ -29,7 +60,8 @@
     height: 270px;
     position: absolute;
     top: 167px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     content: "";
     background: url("../img/index-can-mobile.png") no-repeat;
   }
@@ -42,21 +74,21 @@
       width: 709px;
       height: 609px;
       top: 263px;
-      left: 0;
+      left: 30px;
+      transform: none;
       background: url("../img/index-can-tablet1.png") no-repeat;
     }
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    position: static;
     margin: -140px 0 0;
-    grid-template-columns: 1fr 1fr;
     min-height: 694px;
 
     &::after {
       width: 552px;
       height: 499px;
-      top: 200px;
+      top: 141px;
       left: 558px;
       background: url("../img/index-can.png") no-repeat;
     }
@@ -68,9 +100,6 @@
   flex-direction: column;
   gap: 25px;
   padding: 27px 5px 164px;
-  // background-color: rgba(104, 183, 56, 0.85);
-  // background-image: url("../img/green.png"), url("../img/cat.png");
-  // background-repeat: no-repeat, no-repeat;
   margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
@@ -79,14 +108,13 @@
     margin-bottom: 49px;
     color: #000000;
     background-color: #ffffff;
-    // background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    align-self: end;
+    margin: 0;
     padding: 0;
     padding-left: 80px;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
   }
 }
 
@@ -100,9 +128,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 414px;
     grid-row: 1/2;
     grid-column: 1/2;
-    margin-top: 223px;
+    margin-top: 356px;
     z-index: 1;
   }
 }
@@ -127,37 +156,25 @@
   }
 }
 
-.hero__decor-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(104, 183, 56, 0.85);
-  min-height: 302px;
-  // background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/green.png"), url("../img/cat.png");
-  background-repeat: no-repeat, no-repeat;
-  z-index: -1;
+// .hero__decor-wrapper {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   min-height: 302px;
+//   background-color: rgba(104, 183, 56, 0.85);
+//   background-image: url("../img/green.png"), url("../img/cat.png");
+//   background-repeat: no-repeat, no-repeat;
+//   background-position: top center, top center;
+//   z-index: -1;
 
-  @media (min-width: $tablet-width) {
-    position: static;
-    min-height: 0;
-    background-image: none;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 720px;
-    min-height: 694px;
-    width: 50%;
-    // grid-row: 1/3;
-    // grid-column: 2/3;
-    background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/green-desktop.png"), url("../img/index-background-desktop1.png");
-    background-repeat: no-repeat, no-repeat;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     position: static;
+//     min-height: 0;
+//     background-image: none;
+//     background-color: #ffffff;
+//   }
+// }
 
 // @media (min-width: $desktop-width) {
 //   .hero__decor-wrapper {

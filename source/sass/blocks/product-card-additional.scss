@@ -1,0 +1,106 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+
+
+.product-card-additional {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 14px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  background-color: inherit;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 26px 37px 27px;
+    align-items: baseline;
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #cdcdcd;
+
+    &:not(:first-of-type) {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    grid-column: 1/2;
+    grid-template-columns: 325px 1fr 244px;
+    padding: 15px 0 16px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.product-card-additional__title {
+  @include site-title (16px, 16px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    @include site-title (20px, 20px);
+    grid-column: 1/2;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.product-card-additional__description {
+  @include site-content(14px, 14px);
+  margin-bottom: 0;
+
+  tr {
+    text-align: right;
+    vertical-align: middle;
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+  }
+
+  td {
+    width: 91px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include site-content(16px, 20px);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.product-card-additional__button {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+  }
+}

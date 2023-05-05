@@ -11,6 +11,7 @@
 .form-container__title {
   @include site-title(36px, 36px);
   margin-bottom: 37px;
+  padding-top: 27px;
 }
 
 .form-container__subtitle {
