@@ -2165,14 +2165,14 @@ a {
 }
 .form__label--radio {
   position: relative;
-  margin-left: 45px;
+  padding-left: 45px;
   cursor: pointer;
 }
 .form__label--radio::before {
   position: absolute;
   content: "";
   top: 0;
-  left: -45px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -2180,7 +2180,7 @@ a {
 }
 @media (min-width: 768px) {
   .form__label--radio::before {
-    left: -60px;
+    left: 0;
     width: 40px;
     height: 40px;
   }
@@ -2188,7 +2188,7 @@ a {
 .form__label--radio::after {
   position: absolute;
   top: 10px;
-  left: -35px;
+  left: 10px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -2196,28 +2196,27 @@ a {
 }
 @media (min-width: 768px) {
   .form__label--radio::after {
-    left: -48px;
-    top: 12px;
+    left: 11px;
+    top: 11px;
     width: 18px;
     height: 18px;
   }
 }
 @media (min-width: 768px) {
   .form__label--radio {
-    margin-left: 60px;
-    padding: 5px 0;
+    padding: 5px 0 5px 60px;
   }
 }
 .form__label--checkbox {
   position: relative;
-  margin-left: 45px;
+  padding-left: 45px;
   cursor: pointer;
 }
 .form__label--checkbox::before {
   position: absolute;
   content: "";
   top: 0;
-  left: -45px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -2226,33 +2225,32 @@ a {
   .form__label--checkbox::before {
     width: 40px;
     height: 40px;
-    left: -60px;
   }
 }
 .form__label--checkbox::after {
   position: absolute;
   top: 2px;
-  left: -43px;
+  left: 2px;
   width: 26px;
   height: 26px;
   background: url("../img/icons/tick-icon.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .form__label--checkbox::after {
-    left: -53px;
-    top: 6px;
+    left: 7px;
+    top: 7px;
     background: url("../img/icons/tick-icon-tablet.svg") no-repeat;
   }
 }
 @media (min-width: 768px) {
   .form__label--checkbox {
-    width: 37%;
-    margin-left: 60px;
+    min-width: 282px;
+    padding-left: 60px;
   }
 }
 @media (min-width: 1400px) {
   .form__label--checkbox {
-    width: 230px;
+    min-width: 230px;
   }
 }
 
