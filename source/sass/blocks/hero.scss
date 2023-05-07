@@ -14,9 +14,9 @@
     width: 100%;
     min-height: 302px;
     background-color: #639e40;
-    background-image: url("../img/green.png"), url("../img/cat.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top center, top center;
+    background-image: url("../img/cat.png");
+    background-repeat: no-repeat;
+    background-position: top center;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
@@ -30,8 +30,8 @@
       min-width: 720px;
       min-height: 694px;
       background-color: transparent;
-      background-image: url("../img/green-desktop.png"), url("../img/index-background-desktop1.png");
-      background-position: top right, top right;
+      background-image: url("../img/index-background-desktop1.png");
+      background-position: top right;
     }
   }
 
@@ -40,6 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     min-height: 694px;
     padding-bottom: 82px;
     margin-top: -108px;

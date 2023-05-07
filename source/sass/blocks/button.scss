@@ -58,7 +58,13 @@
 
   &--submit {
     border: none;
-    // margin-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      width: 282px;
+      height: 52px;
+    }
+    // margin-left: 20px;
+    // margin-right: 20px;
   }
 }
 
