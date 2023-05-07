@@ -20,9 +20,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  max-width: 320px;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
     margin-left: 70px;
     margin-right: 67px;
     margin-bottom: 71px;
@@ -32,9 +34,11 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1220px;
     margin-bottom: 69px;
     margin-left: 110px;
     margin-right: 110px;
+    gap: 0;
   }
 }
 
