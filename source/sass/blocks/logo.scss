@@ -8,6 +8,8 @@
   color: #111111;
 
   &--letter {
+    justify-content: center;
+
     &:hover,
     &:focus {
       color: #3e3e3e;
@@ -22,10 +24,14 @@
 
 .logo__letter {
   margin-left: 56px;
-}
 
-@media (min-width: $tablet-width) {
-  .logo__letter {
+  @media (min-width: $tablet-width) {
     margin-left: 12px;
   }
 }
+
+// @media (min-width: $tablet-width) {
+//   .logo__letter {
+//     margin-left: 12px;
+//   }
+// }

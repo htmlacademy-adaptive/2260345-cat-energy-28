@@ -1,13 +1,13 @@
 // Базовые стили
 @use "base/fonts.scss";
 @use "base/base.scss";
+@use "blocks/site-container.scss";
 
 // Блоки index
 @use "blocks/header.scss";
 @use "blocks/logo.scss";
 @use "blocks/button.scss";
 @use "blocks/main-nav.scss";
-@use "blocks/nav-closed.scss";
 @use "blocks/main-container.scss";
 @use "blocks/hero.scss";
 @use "blocks/nutrition-program.scss";
@@ -23,6 +23,7 @@
 @use "blocks/catalog.scss";
 @use "blocks/product-card.scss";
 @use "blocks/catalog-additional.scss";
+@use "blocks/product-card-additional.scss";
 @use "blocks/promotion.scss";
 
 //Блоки form
