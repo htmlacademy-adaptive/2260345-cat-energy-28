@@ -50,6 +50,8 @@
   .main-nav--opened .main-nav__link {
     @include site-title(20px, 20px);
     padding: 22px 0 24px;
+    width: 100%;
+    text-align: center;
     font-weight: 500;
     text-transform: uppercase;
     color: #000000;

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy - Catalog</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -104,8 +108,14 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <article class="product-card">
-        <img class="product-card__image" src="img/pro500chicken.png" width="68" height="86"
-          alt="Изображение продукта Cat Energy Pro 500г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/pro500chicken-tablet.png 1x, img/pro500chicken-tablet@2x.png 2x" width="161" height="172">
+            <img class="product-card__image" src="img/pro500chicken-mobile.png" srcset="img/pro500chicken-mobile@2x.png"
+              width="68" height="86" alt="Изображение продукта Cat Energy Pro 500г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Pro 500г</h2>
         <table class="product-card__description">
           <tr>
@@ -124,8 +134,16 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" id="pro" src="img/pro1000chicken.png" width="84" height="100"
-          alt="Изображение продукта Cat Energy Pro 1000г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/pro1000chicken-desktop.png 1x, img/pro1000chicken-desktop@2x.png 2x" width="172" height="196">
+            <source media="(min-width: 768px)"
+              srcset="img/pro1000chicken-tablet.png 1x, img/pro1000chicken-tablet@2x.png 2x" width="168" height="200">
+            <img class="product-card__image" id="pro" src="img/pro1000chicken-mobile.png" width="84" height="100"
+              srcset="img/pro1000chicken-mobile@2x.png" alt="Изображение продукта Cat Energy Pro 1000г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Pro 1000г</h2>
         <table class="product-card__description">
           <tr>
@@ -144,8 +162,14 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" src="img/pro500fish.png" width="68" height="78"
-          alt="Изображение продукта Cat Energy Pro 500г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/pro500fish-tablet.png 1x, img/pro500fish-tablet@2x.png 2x"
+              width="163" height="174">
+            <img class="product-card__image" src="img/pro500fish-mobile.png" width="68" height="78"
+              srcset="img/pro500fish-mobile@2x.png" alt="Изображение продукта Cat Energy Pro 500г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Pro 500г</h2>
         <table class="product-card__description">
           <tr>
@@ -164,8 +188,16 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" src="img/pro1000fish.png" width="84" height="100"
-          alt="Изображение продукта Cat Energy Pro 1000г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/pro1000fish-desktop.png 1x, img/pro1000fish-desktop@2x.png 2x" width="172" height="196">
+            <source media="(min-width: 768px)" srcset="img/pro1000fish-tablet.png 1x, img/pro1000fish-tablet@2x.png 2x"
+              width="168" height="200">
+            <img class="product-card__image" src="img/pro1000fish-mobile.png" width="84" height="100"
+              srcset="img/pro1000fish-mobile@2x.png" alt="Изображение продукта Cat Energy Pro 1000г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Pro 1000г</h2>
         <table class="product-card__description">
           <tr>
@@ -184,8 +216,15 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" id="slim" src="img/slim500buckwheat.png" width="68" height="78"
-          alt="Изображение продукта Cat Energy Slim 500г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/slim500buckwheat-tablet.png 1x, img/slim500buckwheat-tablet@2x.png 2x" width="161"
+              height="171">
+            <img class="product-card__image" id="slim" src="img/slim500buckwheat-mobile.png" width="68" height="78"
+              srcset="img/slim500buckwheat-mobile@2x.png" alt="Изображение продукта Cat Energy Slim 500г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Slim 500г</h2>
         <table class="product-card__description">
           <tr>
@@ -204,8 +243,18 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" src="img/slim1000buckwheat.png" width="84" height="100"
-          alt="Изображение продукта Cat Energy Slim 1000г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/slim1000buckwheat-desktop.png 1x, img/slim1000buckwheat-desktop@2x.png 2x" width="172"
+              height="196">
+            <source media="(min-width: 768px)"
+              srcset="img/slim1000buckwheat-tablet.png 1x, img/slim1000buckwheat-tablet@2x.png 2x" width="168"
+              height="200">
+            <img class="product-card__image" src="img/slim1000buckwheat-mobile.png" width="84" height="100"
+              srcset="img/slim1000buckwheat-mobile@2x.png" alt="Изображение продукта Cat Energy Slim 1000г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Slim 1000г</h2>
         <table class="product-card__description">
           <tr>
@@ -224,8 +273,14 @@
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
       <article class="product-card">
-        <img class="product-card__image" src="img/slim500rice.png" width="72" height="84"
-          alt="Изображение продукта Cat Energy Slim 500г.">
+        <div class="product-card__illustration">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slim500rice-tablet.png 1x, img/slim500rice-tablet@2x.png 2x"
+              width="163" height="174">
+            <img class="product-card__image" src="img/slim500rice-mobile.png" width="72" height="84"
+              srcset="img/slim500rice-mobile@2x.png" alt="Изображение продукта Cat Energy Slim 500г.">
+          </picture>
+        </div>
         <h2 class="product-card__title">Cat Energy Slim 500г</h2>
         <table class="product-card__description">
           <tr>
@@ -302,7 +357,9 @@
         <p class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="invite-dealers__map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682891325613!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682891325613!5m2!1sru!2sru"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

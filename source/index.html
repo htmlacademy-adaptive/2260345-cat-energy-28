@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -174,13 +178,23 @@
           </p>
         </div>
         <div class="example__slider">
-          <img class="example__image-before" src="img/fat-cat.png" width="280" height="256" alt="Толстый кот.">
-          <img class="example__image-after" src="img/slim-cat.png" width="280" height="256" alt="Стройный кот.">
-          <button class="button" aria-label="Подвиньте вправо или влево.">
-            <!-- <svg></svg> -->
+          <div class="example__before-wrapper">
+            <!-- <img class="example__image-before" src="img/fat-cat.png" width="280" height="256" alt="Толстый кот."> -->
+          </div>
+          <div class="example__after-wrapper">
+            <!-- <img class="example__image-after" src="img/slim-cat.png" width="280" height="256" alt="Стройный кот."> -->
+          </div>
+          <button class="example__button" aria-label="Подвиньте вправо или влево.">
+            <svg width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" width="4" height="256" rx="2" fill="#666666" />
+              <rect x="1" y="109" width="38" height="38" rx="19" fill="white" />
+              <path d="M16 119L8 128L16 137V119Z" fill="#666666" />
+              <path d="M32 128L24 119V137L32 128Z" fill="#666666" />
+              <rect x="1" y="109" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+            </svg>
           </button>
         </div>
-        <div class="example__decor"></div>
+        <!-- <div class="example__decor"></div> -->
       </div>
     </section>
     <section class="invite-dealers">
