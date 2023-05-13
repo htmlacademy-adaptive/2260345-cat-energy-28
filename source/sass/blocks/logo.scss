@@ -7,6 +7,15 @@
   text-decoration: none;
   color: #111111;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   &--letter {
     justify-content: center;
 
@@ -22,13 +31,13 @@
   }
 }
 
-.logo__letter {
-  margin-left: 56px;
+// .logo__letter {
+//   margin-left: 56px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 12px;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     margin-left: 12px;
+//   }
+// }
 
 // @media (min-width: $tablet-width) {
 //   .logo__letter {

@@ -99,9 +99,28 @@
     }
   }
 
+  &--owner,
+  &--comment,
+  &--additional {
+    position: relative;
+
+    &::after {
+      // content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 20px;
+      height: 2px;
+      width: 100%;
+      background-color: $main-color;
+    }
+  }
+
   &--owner {
-    flex-direction: row;
-    justify-content: space-between;
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &--radio {
@@ -147,6 +166,10 @@
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 6px 0;
+
+  &--disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     @include site-title(20px, 30px);
@@ -252,9 +275,22 @@
   padding: 14px 15px;
   border: 1px solid #e7e7e7;
 
+  &:hover,
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &--email {
+    background: url("../img/icons/email-icon.svg") no-repeat 93% 50%;
+  }
+
   @media (min-width: $tablet-width) {
     @include site-title(20px, 30px);
     padding: 11px 20px;
+  }
+
+  &--tel {
+    background: url("../img/icons/phone-icon.svg") no-repeat 93% 50%;
   }
 }
 
@@ -268,7 +304,7 @@
 
 .form__title {
   @include site-title(24px, 26px);
-  padding-right: 93px;
+  // padding-right: 93px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -347,6 +383,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+    gap: 84px;
   }
 }
 

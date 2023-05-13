@@ -11,7 +11,7 @@
     background-color: $bgcolor-secondary;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     width: 768px;
   }
@@ -70,6 +70,7 @@
   position: relative;
   min-height: 362px;
   background: url("../img/map.png") no-repeat;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     background: url("../img/map-tablet.png") no-repeat;

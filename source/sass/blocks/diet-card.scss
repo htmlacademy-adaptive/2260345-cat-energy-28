@@ -134,11 +134,30 @@
 
 .diet-card__link {
   @include site-title(16px, 16px);
+  position: relative;
+  display: block;
+  width: 139px;
   text-transform: uppercase;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     @include site-title(20px, 30px);
+    width: 165px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    top: 2px;
+    right: 15px;
+    background: url("../img/icons/arrow-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: 25px;
+    }
   }
 }
 
