@@ -83,7 +83,7 @@
     width: 30px;
     height: 30px;
     content: "";
-    background: url("../img/icons/plus-icon.svg") no-repeat;
+    background: url("../img/sprite.svg#plus-icon-mobile") no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 60px;
@@ -91,7 +91,7 @@
       top: 52px;
       left: 50%;
       transform: translateX(-50%);
-      background: url("../img/icons/plus-icon-tablet.svg") no-repeat;
+      background: url("../img/sprite.svg#plus-icon-tablet") no-repeat;
     }
   }
 }

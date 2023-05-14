@@ -245,12 +245,12 @@
       left: 2px;
       width: 26px;
       height: 26px;
-      background: url("../img/icons/tick-icon.svg") no-repeat;
+      background: url("../img/sprite.svg#tick-icon-mobile") no-repeat;
 
       @media (min-width: $tablet-width) {
         left: 7px;
         top: 7px;
-        background: url("../img/icons/tick-icon-tablet.svg") no-repeat;
+        background: url("../img/sprite.svg#tick-icon-tablet") no-repeat;
       }
     }
 
