@@ -47,7 +47,7 @@
       height: 50px;
       top: 21px;
       left: 29px;
-      background: url("../img/icons/slim-icon.svg") no-repeat;
+      background: url("../img/sprite.svg#slim-icon-mobile") no-repeat;
       content: "";
 
       @media (min-width: $tablet-width) {
@@ -56,7 +56,7 @@
         top: 81px;
         left: auto;
         right: 92px;
-        background: url("../img/icons/slim-icon-tablet.svg") no-repeat;
+        background: url("../img/sprite.svg#slim-icon-tablet") no-repeat;
       }
 
       @media (min-width: $desktop-width) {
@@ -64,7 +64,7 @@
         height: 97px;
         top: 41px;
         left: 67px;
-        background: url("../img/icons/slim-icon-desk.svg") no-repeat;
+        background: url("../img/sprite.svg#slim-icon-desktop") no-repeat;
       }
     }
   }
@@ -76,7 +76,7 @@
       height: 28px;
       top: 35px;
       left: 13px;
-      background: url("../img/icons/pro-icon.svg") no-repeat;
+      background: url("../img/sprite.svg#pro-icon-mobile") no-repeat;
       content: "";
 
       @media (min-width: $tablet-width) {
@@ -85,7 +85,7 @@
         top: 135px;
         right: 62px;
         left: auto;
-        background: url("../img/icons/pro-icon-tablet.svg") no-repeat;
+        background: url("../img/sprite.svg#pro-icon-tablet") no-repeat;
       }
 
       @media (min-width: $desktop-width) {
@@ -93,7 +93,7 @@
         height: 57px;
         top: 67px;
         left: 33px;
-        background: url("../img/icons/pro-icon-desk.svg") no-repeat;
+        background: url("../img/sprite.svg#pro-icon-desktop") no-repeat;
       }
     }
   }
@@ -134,11 +134,34 @@
 
 .diet-card__link {
   @include site-title(16px, 16px);
+  position: relative;
+  display: block;
+  width: 139px;
   text-transform: uppercase;
   color: #000000;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     @include site-title(20px, 30px);
+    width: 165px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    top: 2px;
+    right: 15px;
+    background: url("../img/sprite.svg#arrow-mobile");
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: 25px;
+    }
   }
 }
 

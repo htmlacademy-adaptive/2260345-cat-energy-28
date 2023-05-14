@@ -5,13 +5,19 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 320px;
 
   &--secondary {
     background-color: $bgcolor-secondary;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
 
@@ -64,6 +70,7 @@
   position: relative;
   min-height: 362px;
   background: url("../img/map.png") no-repeat;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     background: url("../img/map-tablet.png") no-repeat;
@@ -77,7 +84,7 @@
 .invite-dealers__map-wrapper iframe {
   border: none;
   display: block;
-  width: 100vw;
+  width: 100%;
   min-height: 362px;
 
   @media (min-width: $tablet-width) {

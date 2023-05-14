@@ -17,6 +17,15 @@
   line-height: 20px;
   height: 40px;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba (255, 255, 255, 30%);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -54,6 +63,16 @@
   &--secondary {
     background-color: $bgcolor-secondary;
     color: #444444;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba (0, 0, 0, 30%);
+    }
   }
 
   &--submit {
@@ -63,40 +82,5 @@
       width: 282px;
       height: 52px;
     }
-    // margin-left: 20px;
-    // margin-right: 20px;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .button {
-//     font-size: 20px;
-
-//     &--program {
-//       z-index: 1;
-//       width: 244px;
-//       height: 54px;
-//       padding: 14px 26px;
-//       line-height: 20px;
-//       margin-left: 91px;
-//     }
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .button {
-//     font-size: 20px;
-
-//     &--program {
-//       z-index: 0;
-//       grid-row: 2/3;
-//       grid-column: 1/2;
-//       width: 244px;
-//       height: 54px;
-//       padding: 14px 26px;
-//       line-height: 20px;
-//       margin-left: 190px;
-//       margin-bottom: 185px;
-//     }
-//   }
-// }

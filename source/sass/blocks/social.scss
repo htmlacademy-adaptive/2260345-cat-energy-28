@@ -1,3 +1,6 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+
 .social {
   display: flex;
   align-self: center;
@@ -6,15 +9,34 @@
 }
 
 .social__link {
-  color: #666666;
+  background-color: #666666;
 
   &:hover,
   &:focus {
-    color: #68b738;
+    background-color: $main-color;
+    color: $main-color;
     outline: none;
   }
 
   &:active {
-    color: rgba(104, 183, 56, 0.3);
+    opacity: 0.3;
+  }
+
+  &--vk {
+    width: 28px;
+    height: 17px;
+    mask: url("../img/sprite.svg#vk-icon");
+  }
+
+  &--youtube {
+    width: 25px;
+    height: 19px;
+    mask: url("../img/sprite.svg#youtube-icon");
+  }
+
+  &--telegram {
+    width: 21px;
+    height: 18px;
+    mask: url("../img/sprite.svg#telegram-icon");
   }
 }
