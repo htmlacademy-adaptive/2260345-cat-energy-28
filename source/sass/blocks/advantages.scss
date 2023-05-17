@@ -2,7 +2,15 @@
 @use "../variables.scss" as *;
 
 .advantages {
-  width: 100vw;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .advantages__container {
@@ -103,7 +111,7 @@
   &--benefit {
     @media (min-width: $tablet-width) {
       margin-right: 124px;
-      background: url("../img/icons/1.svg") no-repeat center right;
+      background: url("../img/1.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,7 +129,7 @@
   &--release-form {
     @media (min-width: $tablet-width) {
       margin-right: 100px;
-      background: url("../img/icons/2.svg") no-repeat center right;
+      background: url("../img/2.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
@@ -139,7 +147,7 @@
   &--replace-food {
     @media (min-width: $tablet-width) {
       margin-right: 107px;
-      background: url("../img/icons/3.svg") no-repeat center right;
+      background: url("../img/3.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
@@ -157,7 +165,7 @@
   &--fast-result {
     @media (min-width: $tablet-width) {
       margin-right: 74px;
-      background: url("../img/icons/4.svg") no-repeat center right;
+      background: url("../img/4.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
