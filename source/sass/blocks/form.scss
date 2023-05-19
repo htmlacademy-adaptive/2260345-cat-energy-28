@@ -277,11 +277,12 @@
 
   &:hover,
   &:focus {
+    border-color: transparent;
     outline: 2px solid #444444;
   }
 
   &--email {
-    background: url("../img/icons/email-icon.svg") no-repeat 93% 50%;
+    background: url("../img/email-icon.svg") no-repeat 93% 50%;
   }
 
   @media (min-width: $tablet-width) {
@@ -290,7 +291,7 @@
   }
 
   &--tel {
-    background: url("../img/icons/phone-icon.svg") no-repeat 93% 50%;
+    background: url("../img/phone-icon.svg") no-repeat 93% 50%;
   }
 }
 
