@@ -66,6 +66,7 @@
     @include site-content (16px, 20px);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     text-align: right;
   }
