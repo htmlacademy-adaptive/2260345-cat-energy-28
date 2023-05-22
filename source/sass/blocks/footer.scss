@@ -27,9 +27,8 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     gap: 0;
-    padding-top: 55px;
+    padding-top: 58px;
     padding-bottom: 55px;
   }
 
@@ -44,6 +43,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 167px;

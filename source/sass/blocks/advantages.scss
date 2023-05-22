@@ -15,14 +15,16 @@
 
 .advantages__container {
   @include site-container;
-  padding-bottom: 49px;
+  padding-bottom: 51px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 90px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 69px;
+    border-bottom: none;
   }
 }
 
@@ -40,7 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -67,6 +69,7 @@
   @media (min-width: $tablet-width) {
     @include site-content(16px, 24px);
     padding: 151px 0 57px;
+    max-width: 242px;
   }
 
   &:nth-child(even) {
@@ -84,6 +87,7 @@
     position: absolute;
     width: 60px;
     height: 60px;
+    top: -3px;
     left: -80px;
     background-color: $main-color;
     content: "";
@@ -116,7 +120,7 @@
 
     @media (min-width: $desktop-width) {
       width: 230px;
-      margin-right: 93px;
+      margin-right: 95px;
     }
 
     &::after {
@@ -134,7 +138,7 @@
 
     @media (min-width: $desktop-width) {
       width: 246px;
-      margin-right: 78px;
+      margin-right: 81px;
     }
 
     &::after {
@@ -152,7 +156,7 @@
 
     @media (min-width: $desktop-width) {
       width: 248px;
-      margin-right: 75px;
+      margin-right: 84px;
     }
 
     &::after {

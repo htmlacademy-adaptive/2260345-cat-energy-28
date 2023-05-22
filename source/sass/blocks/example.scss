@@ -4,18 +4,22 @@
 .example {
   width: 320px;
   position: relative;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 40px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    padding-top: 43px;
+    padding-bottom: 100px;
     width: 768px;
-    background-image: linear-gradient(to bottom, transparent 0, transparent 576px, #eaeaea 576px, #eaeaea 100%);
+    background-image: linear-gradient(to bottom, transparent 0, transparent 620px, #eaeaea 620px, #eaeaea 100%);
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-image: linear-gradient(to bottom, transparent 0, transparent 136px, $bgcolor-secondary 136px, $bgcolor-secondary 100%);
   }
 }
@@ -56,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     @include site-content(16px, 24px);
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 42px;
-    margin-bottom: 104px;
+    margin-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +94,7 @@
 .example__expenses {
   @include site-title(14px, 20px);
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
     @include site-title(20px, 20px);
@@ -114,7 +118,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-  padding: 14px 22px 0;
+  padding: 14px 20px 0;
   align-items: center;
   width: 124px;
   min-height: 56px;
@@ -134,6 +138,7 @@
 .example__weight,
 .example__time {
   @include site-content(12px, 12px);
+  width: 77px;
   text-align: center;
   margin-bottom: -14px;
   z-index: 1;
@@ -141,6 +146,7 @@
 
   @media (min-width: $tablet-width) {
     @include site-content(14px, 14px);
+    width: auto;
     margin-bottom: -5px;
     background-color: #ffffff;
     padding: 0 9px;
@@ -156,6 +162,7 @@
   margin-bottom: 7px;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include site-title(30px, 37px);
@@ -176,6 +183,11 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
