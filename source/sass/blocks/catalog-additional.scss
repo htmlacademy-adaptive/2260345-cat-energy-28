@@ -2,7 +2,6 @@
 @use "../variables.scss" as *;
 
 .catalog-additional {
-  // @include site-container;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -19,8 +18,6 @@
     column-gap: 79px;
     padding-bottom: 85px;
     padding-top: 76px;
-    // padding-left: 110px;
-    // padding-right: 110px;
   }
 }
 
@@ -49,7 +46,6 @@
     width: calc(100vw - 280px);
     min-width: 53px;
     top: 15px;
-    // transform: translateY(-50%);
     background-color: $main-color;
     margin-left: 21px;
 

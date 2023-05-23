@@ -1,12 +1,5 @@
 @use "../mixins.scss" as *;
 
-// .form-container {
-//   // @include site-container;
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-// }
-
 .form-container__title {
   @include site-title(36px, 36px);
   padding: 27px 20px 37px;
