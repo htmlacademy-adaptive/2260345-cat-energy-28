@@ -40,6 +40,7 @@
       font-size: 20px;
       z-index: 1;
       width: 244px;
+      vertical-align: middle;
       height: 54px;
       padding: 14px 26px;
       line-height: 20px;
@@ -81,6 +82,10 @@
     @media (min-width: $tablet-width) {
       width: 282px;
       height: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 568px;
     }
   }
 }

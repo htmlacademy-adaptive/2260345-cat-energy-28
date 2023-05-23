@@ -3,7 +3,7 @@
 
 .diet-card {
   position: relative;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 25px 20px;
   background-color: $bgcolor-secondary;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +83,7 @@
         width: 269px;
         height: 113px;
         top: 135px;
-        right: 62px;
+        right: 27px;
         left: auto;
         background: url("../img/sprite.svg#pro-icon-tablet") no-repeat;
       }
@@ -101,8 +101,9 @@
 
 .diet-card__title {
   @include site-title(24px, 37px);
-  margin-left: 91px;
+  margin-left: 71px;
   margin-bottom: 29px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include site-title(36px, 36px);
@@ -117,12 +118,16 @@
 
 .diet-card__intro {
   @include site-content(14px, 18px);
-  margin-bottom: 42px;
+  padding-bottom: 22px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     @include site-content (16px, 24px);
-    margin-right: 316px;
+    padding-bottom: 0;
+    margin-right: 254px;
     margin-bottom: 52px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

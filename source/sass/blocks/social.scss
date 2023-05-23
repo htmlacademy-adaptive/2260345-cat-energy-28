@@ -6,10 +6,20 @@
   align-self: center;
   flex-wrap: wrap;
   gap: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 401px;
+  }
 }
 
 .social__link {
   background-color: #666666;
+  width: 28px;
+  height: 22px;
 
   &:hover,
   &:focus {
@@ -23,20 +33,14 @@
   }
 
   &--vk {
-    width: 28px;
-    height: 17px;
     mask: url("../img/sprite.svg#vk-icon");
   }
 
   &--youtube {
-    width: 25px;
-    height: 19px;
     mask: url("../img/sprite.svg#youtube-icon");
   }
 
   &--telegram {
-    width: 21px;
-    height: 18px;
     mask: url("../img/sprite.svg#telegram-icon");
   }
 }

@@ -18,7 +18,7 @@
       <a class="logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)"
-          scrset="img/header-logo-desktop.svg" width="202" height="59">
+          srcset="img/header-logo-desktop.svg" width="202" height="59">
           <source media="(min-width: 768px)"
           srcset="img/header-logo-tablet.svg" width="174" height="152">
           <img class="logo__icon" src="img/header-logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
@@ -48,11 +48,11 @@
             <input class="form__input" id="form__name" name="name" type="text" placeholder="Барсик" required>
           </div>
           <div class="form__input-wrapper">
-            <label class="form__label" for="form__weight">Вес(кг):*</label>
+            <label class="form__label" for="form__weight">Вес (кг):*</label>
             <input class="form__input" id="form__weight" name="weight" type="text" placeholder="7" required>
           </div>
           <div class="form__input-wrapper">
-            <label class="form__label" for="form__age">Возраст(лет):</label>
+            <label class="form__label" for="form__age">Возраст&nbsp;(лет):</label>
             <input class="form__input" id="form__age" name="age" type="text" placeholder="7">
           </div>
         </fieldset>
@@ -67,16 +67,14 @@
         </fieldset>
       </div>
       <fieldset class="form__fieldset form__fieldset--owner">
-        <legend class="form__title">Контактные данные (владельца кота)</legend>
+        <legend class="form__title form__title--owner">Контактные данные (владельца кота)</legend>
         <div class="form__input-wrapper">
-          <label class="form__label" for="form__email">E-mail:*</label>
-          <input class="form__input form__input--email" id="form__email" name="e-mail" type="email"
-            placeholder="kuklachev@gmail.com" required>
+          <input class="form__input form__input--email" id="form__email" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
+          <label class="form__label form__label--email" for="form__email">E-mail:*</label>
         </div>
         <div class="form__input-wrapper">
-          <label class="form__label" for="form__tel">Телефон:*</label>
-          <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel"
-            placeholder="8 (960) 900-60-90" required>
+          <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+          <label class="form__label form__label--tel" for="form__tel">Телефон:*</label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--comment">
@@ -101,8 +99,8 @@
     </form>
     <section class="invite-dealers invite-dealers--secondary">
       <div class="invite-dealers__wrapper">
-        <h3 class="invite-dealers__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h3 class="invite-dealers__title">Приглашаем<br> к сотрудничеству дилеров!</h3>
+        <p class="invite-dealers__address"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span></p>
       </div>
       <div class="invite-dealers__map-wrapper">
         <iframe

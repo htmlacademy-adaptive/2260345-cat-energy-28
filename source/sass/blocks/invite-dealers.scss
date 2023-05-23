@@ -30,7 +30,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 58px 70px;
     gap: 296px;
   }
 
@@ -51,6 +51,7 @@
 .invite-dealers__title {
   @include site-title(16px, 20px);
   text-transform: uppercase;
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     @include site-title(20px, 26px);
@@ -59,10 +60,19 @@
 
 .invite-dealers__address {
   @include site-content (14px, 18px);
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     @include site-content (16px, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

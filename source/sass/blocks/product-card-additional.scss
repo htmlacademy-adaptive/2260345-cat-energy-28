@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: stretch;
-  row-gap: 14px;
   padding-top: 13px;
   padding-bottom: 19px;
   background-color: inherit;
@@ -15,10 +14,18 @@
   border: 1px solid #cdcdcd;
   border-left: none;
   border-right: none;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &:not(:first-of-type) {
+    border-top: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 26px 37px 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 24px 37px 27px;
     align-items: baseline;
     row-gap: 0;
     grid-template-columns: 1fr 1fr;
@@ -34,6 +41,8 @@
     grid-column: 1/2;
     grid-template-columns: 325px 1fr 244px;
     padding: 15px 0 16px;
+    margin: 0;
+    margin-left: 110px;
     border-left: none;
     border-right: none;
   }
@@ -42,7 +51,7 @@
 .product-card-additional__title {
   @include site-title (16px, 16px);
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     @include site-title (20px, 20px);
@@ -57,11 +66,12 @@
 
 .product-card-additional__description {
   @include site-content(14px, 14px);
-  margin-bottom: 0;
+  margin-bottom: 13px;
 
   tr {
     text-align: right;
     vertical-align: middle;
+    padding: 0;
 
     @media (min-width: $desktop-width) {
       text-align: left;
@@ -71,6 +81,7 @@
   th {
     text-align: left;
     font-weight: 400;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       text-align: right;
@@ -83,6 +94,7 @@
 
   td {
     width: 91px;
+    padding: 0;
   }
 
   @media (min-width: $tablet-width) {
