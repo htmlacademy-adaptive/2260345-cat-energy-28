@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy - form</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="script.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -17,10 +22,8 @@
     <div class="header__container">
       <a class="logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)"
-          srcset="img/header-logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)"
-          srcset="img/header-logo-tablet.svg" width="174" height="152">
+          <source media="(min-width: 1200px)" srcset="img/header-logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="174" height="152">
           <img class="logo__icon" src="img/header-logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
@@ -68,29 +71,35 @@
       </div>
       <fieldset class="form__fieldset form__fieldset--owner">
         <legend class="form__title form__title--owner">Контактные данные (владельца кота)</legend>
-        <div class="form__input-wrapper">
-          <input class="form__input form__input--email" id="form__email" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
-          <label class="form__label form__label--email" for="form__email">E-mail:*</label>
-        </div>
-        <div class="form__input-wrapper">
-          <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
-          <label class="form__label form__label--tel" for="form__tel">Телефон:*</label>
+        <div class="form__fieldset-wrapper">
+          <div class="form__input-wrapper">
+            <input class="form__input form__input--email" id="form__email" name="e-mail" type="email"
+              placeholder="kuklachev@gmail.com" required>
+            <label class="form__label form__label--email" for="form__email">E-mail:*</label>
+          </div>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input--tel" id="form__tel" name="phone" type="tel"
+              placeholder="8 (960) 900-60-90" required>
+            <label class="form__label form__label--tel" for="form__tel">Телефон:*</label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--comment">
-        <legend class="form__title">Комментарий</legend>
+        <legend class="form__title form__title--comment">Комментарий</legend>
         <textarea class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--additional">
         <legend class="form__title form__title--additional">Дополнительно</legend>
-        <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-        <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
-        <input class="form__input visually-hidden" id="drinking-water" type="checkbox" name="drinking-water">
-        <label class="form__label form__label--checkbox" for="drinking-water">Питьевая вода</label>
-        <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
-        <label class="form__label form__label--checkbox" for="milk">Молоко</label>
-        <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-        <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--additional">
+          <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+          <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+          <input class="form__input visually-hidden" id="drinking-water" type="checkbox" name="drinking-water">
+          <label class="form__label form__label--checkbox" for="drinking-water">Питьевая вода</label>
+          <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
+          <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+          <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+          <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+        </div>
       </fieldset>
       <div class="form__footer">
         <button class="button button--submit" type="submit">Отправить заявку</button>
@@ -124,7 +133,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.min.js"></script>
 </body>
 
 </html>
