@@ -83,5 +83,9 @@
       width: 282px;
       height: 52px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 568px;
+    }
   }
 }
