@@ -42,7 +42,6 @@ const scripts = () => {
     .pipe(terser())
     .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build'));
-    
 }
 
 //Images
