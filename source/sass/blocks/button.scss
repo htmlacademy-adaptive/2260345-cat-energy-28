@@ -15,7 +15,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  height: 40px;
+  min-height: 40px;
 
   &:hover,
   &:focus {
@@ -34,29 +34,28 @@
     padding: 10px 44px;
     font-size: 14px;
     line-height: 18px;
-    height: 40px;
 
     @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 294px;
+      left: 121px;
       font-size: 20px;
       z-index: 1;
       width: 244px;
       vertical-align: middle;
-      height: 54px;
+      min-height: 54px;
       padding: 14px 26px;
       line-height: 20px;
-      margin-left: 91px;
-      margin-bottom: 526px;
     }
 
     @media (min-width: $desktop-width) {
       z-index: 0;
-      grid-row: 2/3;
-      grid-column: 1/2;
+      top: 312px;
+      left: 190px;
       width: 244px;
-      height: 54px;
+      min-height: 54px;
       padding: 14px 26px;
       line-height: 20px;
-      margin-left: 80px;
       margin-bottom: 185px;
     }
   }

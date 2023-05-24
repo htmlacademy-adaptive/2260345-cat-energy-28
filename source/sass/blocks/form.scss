@@ -145,7 +145,7 @@
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 245px;
-      gap: 0;
+      column-gap: 20px;
       max-width: 1440px;
       padding: 0;
       padding-left: 110px;

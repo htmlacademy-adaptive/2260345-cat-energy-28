@@ -55,6 +55,8 @@
     min-height: 694px;
     padding-bottom: 82px;
     margin-top: -108px;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -66,44 +68,10 @@
   color: #ffffff;
   position: relative;
 
-  &::after {
-    display: block;
-    width: 280px;
-    height: 270px;
-    position: absolute;
-    top: 167px;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "";
-    background: url("../img/index-can-mobile.png") no-repeat;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    min-height: 810px;
-
-    &::after {
-      width: 709px;
-      height: 609px;
-      top: 263px;
-      left: 30px;
-      transform: none;
-      background: url("../img/index-can-tablet.png") no-repeat;
-    }
-  }
-
   @media (min-width: $desktop-width) {
-    position: static;
-    margin: -140px 0 0;
-    min-height: 694px;
-
-    &::after {
-      width: 552px;
-      height: 499px;
-      top: 141px;
-      left: 558px;
-      background: url("../img/index-can-desktop.png") no-repeat;
-    }
+    flex-direction: row;
+    margin-top: 143px;
+    align-items: flex-start;
   }
 }
 
@@ -111,13 +79,13 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 27px 5px 164px;
-  margin-bottom: 138px;
+  padding-top: 27px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     padding: 62px 35px 0 88px;
     gap: 43px;
-    margin-bottom: 49px;
+    margin-bottom: 20px;
     color: #000000;
     background-color: #ffffff;
   }
@@ -126,7 +94,12 @@
     margin: 0;
     padding: 0;
     padding-left: 80px;
-    padding-bottom: 52px;
+  }
+}
+
+.hero__illustration {
+  @media (min-width: $desktop-width) {
+    margin-left: -46px;
   }
 }
 
@@ -143,7 +116,7 @@
     max-width: 414px;
     grid-row: 1/2;
     grid-column: 1/2;
-    margin-top: 362px;
+    margin-top: 82px;
     z-index: 1;
   }
 }
