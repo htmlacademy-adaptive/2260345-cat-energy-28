@@ -55,9 +55,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 79px;
   }
 }
 
@@ -114,13 +113,11 @@
 
   &--benefit {
     @media (min-width: $tablet-width) {
-      margin-right: 124px;
       background: url("../img/1.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
       width: 230px;
-      margin-right: 95px;
     }
 
     &::after {
@@ -132,13 +129,11 @@
 
   &--release-form {
     @media (min-width: $tablet-width) {
-      margin-right: 100px;
       background: url("../img/2.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
       width: 246px;
-      margin-right: 81px;
     }
 
     &::after {
@@ -150,13 +145,11 @@
 
   &--replace-food {
     @media (min-width: $tablet-width) {
-      margin-right: 107px;
       background: url("../img/3.svg") no-repeat center right;
     }
 
     @media (min-width: $desktop-width) {
       width: 248px;
-      margin-right: 84px;
     }
 
     &::after {
@@ -168,7 +161,6 @@
 
   &--fast-result {
     @media (min-width: $tablet-width) {
-      margin-right: 74px;
       background: url("../img/4.svg") no-repeat center right;
     }
 
